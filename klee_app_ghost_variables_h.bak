@@ -1,0 +1,6 @@
+struct sched_param ghost_thread_1_sched_parameter;
+struct sched_param ghost_thread_2_sched_parameter;
+int ghost_scheduling_policy;
+int ghost_thread_1_scheduling_policy;
+int ghost_thread_2_scheduling_policy;
+pthread_t ghost_sched_param_thread;

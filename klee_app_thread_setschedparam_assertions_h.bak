@@ -1,0 +1,19 @@
+    ghost_scheduling_policy = policy;
+    ghost_sched_param_thread = t;
+    if (t == t1){
+      ghost_thread_1_sched_parameter.sched_priority = p->sched_priority;
+      ghost_thread_1_scheduling_policy = policy;
+      assert(ghost_thread_1_scheduling_policy == SCHED_FIFO);
+      assert(ghost_thread_1_sched_parameter.sched_priority == 2);
+   }
+    if (t == t2) {
+      ghost_thread_2_sched_parameter.sched_priority = p->sched_priority;
+      ghost_thread_2_scheduling_policy = policy;
+      assert(ghost_thread_2_scheduling_policy == SCHED_FIFO);
+      assert(ghost_thread_2_sched_parameter.sched_priority == 3);
+    }
+
+    //assert(ghost_scheduling_policy == SCHED_FIFO);
+   // assert((ghost_sched_param_thread != t1) || ghost_thread_1_sched_parameter.sched_priority == 2);
+  //  assert((ghost_sched_param_thread != t2) || ghost_thread_2_sched_parameter.sched_priority == 3);
+
